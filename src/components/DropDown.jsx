@@ -17,7 +17,7 @@ const DropDown = () => {
             <IoCaretDown />
           </div>
         </div>
-        <div className="smooth flex h-[0px] w-full flex-col gap-3 text-lg font-bold group-hover:h-32">
+        <div className="smooth flex h-[0px] w-full flex-col gap-2 text-lg font-bold group-hover:h-32">
           {dropdownData.map((data) => (
             <DropDownItem
               key={data.text}
