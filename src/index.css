@@ -35,13 +35,14 @@
     scrollbar-width: none; /* Firefox */
   }
 
-  .box::before {
+  .border-animation::before {
     background-image: conic-gradient(#3b73f6 20deg, transparent 120deg);
     @apply animate-border-spin absolute left-[-40%] top-[-45%] h-[500px] w-[600px] content-[''];
   }
-  /* .box::after {
-    @apply absolute flex h-[94%] w-[94%] items-center justify-center bg-[#020223] font-medium uppercase tracking-[2px] content-['tailwind'];
-  } */
+
+  .smooth {
+    transition: height 1s ease;
+  }
 }
 
 body {
